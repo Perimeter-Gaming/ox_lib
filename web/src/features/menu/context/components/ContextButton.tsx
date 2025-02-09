@@ -21,16 +21,15 @@ const useStyles = createStyles((theme, params: { disabled?: boolean; readOnly?: 
   },
   label: {
     width: '100%',
-    color: params.disabled ? theme.colors.dark[8] : theme.colors.dark[0],
+    color: params.disabled ? theme.colors.dark[3] : theme.colors.dark[0],
     whiteSpace: 'pre-wrap',
   },
   button: {
     height: 'fit-content',
     width: '100%',
     padding: 10,
-    backgroundColor: theme.colors.dark[8],
     '&:hover': {
-      backgroundColor: params.readOnly ? theme.colors.dark[8] : undefined,
+      backgroundColor: params.readOnly ? theme.colors.dark[6] : undefined,
       cursor: params.readOnly ? 'unset' : 'pointer',
     },
     '&:active': {
@@ -41,7 +40,7 @@ const useStyles = createStyles((theme, params: { disabled?: boolean; readOnly?: 
     maxWidth: '25px',
   },
   description: {
-    color: params.disabled ? theme.colors.dark[8] : theme.colors.dark[2],
+    color: params.disabled ? theme.colors.dark[3] : theme.colors.dark[2],
     fontSize: 12,
   },
   dropdown: {
